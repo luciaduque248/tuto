@@ -1,13 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
 import Footer from '../../../footer/Footer'
 import Header from '../../../header/Header'
 
-import '../../css/adiest-g.css'
-import BotonPerro from '../../assets/img/blog/botonperro.png';
-import BotonGato from '../../assets/img/blog/botongato.png'
+import '../../css/adiest-g.css';
 import Gato5 from '../../assets/img/blog/gato 5-PhotoRoom 1.png'
 import Foto from '../../assets/img/blog/istockphoto-1333388527-612x612-PhotoRoom 1(1).png'
+import Sections from '../Menu/Sections'
+import Menu from '../Menu/MenuGatos';
 
 function Adiest() {
   return (
@@ -18,45 +17,12 @@ function Adiest() {
         <div className="tittle">
           <h1>¡Bienvenidos a nuestro blog!</h1>
         </div>
-        <section id="sections">
-          <article className="dog">
-            <div className="button-dog">
-              <Link to="/perros">
-                <h3>Perros</h3>
-                <img src={BotonPerro} alt="perrito" /></Link>
-            </div>
-          </article>
-
-          <article className="cat">
-            <div className="button-cat">
-              <Link to="/gatos">
-                <h3>Gatos</h3>
-                <img src={BotonGato} alt="gatito" />
-              </Link>
-            </div>
-          </article>
-        </section>
+        <Sections/>
 
         <div className="line-blue"></div>
 
         <section id="nav-dog">
-          <article className="nav-dogmenu">
-            <Link to="/gatos">
-              <h2 className="opciones"><i className="fa-solid fa-cat"></i>Aprende con nosotros</h2>
-            </Link>
-            <Link to="/gatos/mitos">
-              <h2 className="opciones"><i className="fa-solid fa-cat"></i>Mitos y Verdades</h2>
-            </Link>
-            <Link to="/gatos/cuidados">
-              <h2 className="opciones"><i className="fa-solid fa-cat"></i>Cuidados</h2>
-            </Link>
-            <Link to="/gatos/adiest">
-              <h2 className="opciones"><i className="fa-solid fa-cat"></i>Adiestramiento</h2>
-            </Link>
-            <Link to="/gatos/tam">
-              <h2 className="opciones"><i className="fa-solid fa-cat"></i>Tamaños y Razas</h2>
-            </Link>
-          </article>
+          <Menu/>
 
           <div className="line-blue"></div>
 

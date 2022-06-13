@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
-import { Link } from 'react-router-dom';
 import './css/gatos.css'
 
 import Learn from './assets/img/blog/istockphoto-1185437742-612x612-PhotoRoom 1(1).png';
-import PhotoRoom from './assets/img/blog/ccc-PhotoRoom 1.png'
-import BotonPerro from './assets/img/blog/botonperro.png';
+import PhotoRoom from './assets/img/blog/ccc-PhotoRoom 1.png';
+import Menu from './navegacion/Menu/MenuGatos';
+import Sections from './navegacion/Menu/Sections';
 
 function Gatos() {
     return (
@@ -16,25 +16,9 @@ function Gatos() {
                 <div className="tittle">
                     <h1>¡Aprende sobre tu mejor amigo con bigotes!</h1>
                 </div>
-
+                <Sections/>
                 <section id="nav-dog">
-                    <div className="nav-dogmenu">
-                        <Link to="/gatos">
-                            <h2 className="opciones"><i className="fa-solid fa-cat"></i>Aprende con nosotros</h2>
-                        </Link>
-                        <Link to="/gatos/mitos">
-                            <h2 className="opciones"><i className="fa-solid fa-cat"></i>Mitos y Verdades</h2>
-                        </Link>
-                        <Link to="/gatos/cuidados">
-                            <h2 className="opciones"><i className="fa-solid fa-cat"></i>Cuidados</h2>
-                        </Link>
-                        <Link to="/gatos/adiest">
-                            <h2 className="opciones"><i className="fa-solid fa-cat"></i>Adiestramiento</h2>
-                        </Link>
-                        <Link to="/gatos/tam">
-                            <h2 className="opciones"><i className="fa-solid fa-cat"></i>Tamaños y Razas</h2>
-                        </Link>
-                    </div>
+                    <Menu/>
 
                     <div className="learnkahoot">
                         <h1 className="learn-kahoot">Perros grandes versus Bigotes de los gatos: para qué sirven y por qué nunca
@@ -90,18 +74,7 @@ function Gatos() {
                 </section>
             </div>
 
-            <section id="sections">
-
-                <div className="dog">
-                    <div className="button-dog">
-                        <Link to="perros.html">
-                            <h3>Perros</h3>
-                            <img src={BotonPerro} alt="perrito" />
-                        </Link>
-                    </div>
-                </div>
-
-            </section>
+            
 
             <Footer />
         </div>

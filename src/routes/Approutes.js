@@ -33,7 +33,7 @@ function Approutes() {
                 <Route path='/perros/adiest' element={<PerrosAdiest />}></Route>
                 <Route path='/perros/cuidados' element={<PerrosCuidados />}></Route>
                 <Route path='/perros/mitos' element={<PerrosMitos />}></Route>
-                <Route path='/perros/tamaños' element={<PerrosTamaños />}></Route>
+                <Route path='/perros/tamyrazas' element={<PerrosTamaños />}></Route>
 
                 <Route path='/gatos' element={<Gatos />}></Route>
                 <Route path='/gatos/adiest' element={<GatosAdiest />}></Route>
